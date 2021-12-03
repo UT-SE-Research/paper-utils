@@ -1,0 +1,77 @@
+% Packages
+\usepackage{listings}
+\usepackage{xspace}
+%\usepackage[usenames,dvipsnames]{color}
+%\usepackage[table,svgnames]{xcolor}
+
+% Meta-stuff for text
+\newcommand{\Comment}[1]{}
+\newcommand{\Space}[1]{}
+\newcommand{\Fix}[1]{\textcolor{red}{#1}}
+\newcommand{\Num}[1]{#1} % mark hardcoded numbers that may need to be checked
+\newcommand{\august}[1]{\textcolor{magenta}{#1}}
+
+% Code
+\newcommand{\CodeIn}[1]{{\texttt{#1}}}
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % strings
+\definecolor{linenumbergray}{rgb}{0.5,0.5,0.5}
+\lstdefinestyle{Java-github}{
+        basicstyle=\ttfamily\footnotesize,
+        language=Java,
+        commentstyle=\color{linenumbergray},
+        stringstyle=\color{javapurple},
+        keywordstyle=\color{red},
+        morekeywords={@Test},
+        morecomment=[s][\color{linenumbergray}]{/**}{*/},
+        numbers=left,
+        numberstyle=\tiny\color{linenumbergray},
+        numbersep=2.5pt,
+        moredelim=**[is][\color{javapurple}]{@h@}{@h@},
+        morecomment=[f][{\btHL[fill=gitdel]}]-,
+        morecomment=[f][{\btHL[fill=gitadd]}]+,
+        %escapeinside={(*@}{@*)}
+}
+
+\lstdefinestyle{Python-github}{
+        basicstyle=\ttfamily\footnotesize,
+        language=Python,
+        commentstyle=\color{linenumbergray},
+        stringstyle=\color{javapurple},
+        keywordstyle=\color{red},
+        numbers=left,
+        numberstyle=\tiny\color{linenumbergray},
+        numbersep=2.5pt,
+        moredelim=**[is][\color{javapurple}]{@h@}{@h@},
+        moredelim=**[is][\btHL]{@i@}{@i@},
+}
+
+% Def Use for data displaying
+\newcommand{\Def}[2]{\expandafter\newcommand\csname rmk-#1\endcsname{#2}}
+\newcommand{\Use}[1]{\csname rmk-#1\endcsname}
+
+% Commonly used term shortcuts
+\newcommand{\etal}{et al.}
+
+% Terms
+\newcommand{\Toolname}{Tool}
+\newcommand{\bug}{fault}
+
+% Numbers
+\newcommand{\TotalResults}{12345}
+
+% Tables
+\newcommand{\TableCaption}{Caption for table.}
+\newcommand{\TableHeader}{Header for table}
+
+% Data
+\input{data/projstats}
+\input{data/data}
+
+% Affiliation
+\newcommand{\UTAffiliation}{\affiliation{
+    \institution{The University of Texas at Austin}
+    \city{Austin}
+    \state{TX}
+    \country{USA}
+    \postcode{78705}
+}}

@@ -1,0 +1,37 @@
+\documentclass[sigconf,review,anonymous]{acmart}    %% Changes based on conference
+
+% Put *ALL* macros in the macros file
+\input{macros}
+
+\begin{document}
+% Put *ALL* macros in the macros file, NOT here
+
+\title{Paper Title}
+
+\Comment{Anonymous for double-blind
+
+%% Insert other authors above
+
+\author{August Shi}
+\UTAffiliation
+\email{august@utexas.edu}
+}
+
+%\renewcommand{\shortauthors}{... and A. Shi}
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+\maketitle
+
+\input{intro}
+\input{example}
+\input{eval}
+\input{conclusion}
+
+\bibliographystyle{ACM-Reference-Format}
+\balance
+\bibliography{bib}
+
+\end{document}
