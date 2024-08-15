@@ -29,8 +29,10 @@
 @string{MTD = "International Workshop on Managing Technical Debt"}
 @string{OOPSLA = "Conference on Object-Oriented Programming, Systems, Languages, and Applications"}
 @string{PACMPL = "Proceedings of the ACM on Programming Languages"}
+@string{PACMSE = "Proceedings of the ACM on Software Engineering"}
 @string{POPL = "Symposium on Principles of Programming Languages"}
 @string{PRECS = "International Workshop on Practical Reproducible Evaluation of Computer Systems"}
+@string{PTRSA = "Philosophical Transactions of the Royal Society A"}
 @string{PROMISE = "International Conference on Predictive Models and Data Analytics in Software Engineering"}
 @string{PROG = "Programming Journal"}
 @string{SBES = "Brazilian Symposium on Software Engineering"}
@@ -310,6 +312,16 @@
     pages = {256--278},
 }
 
+@article{KrafczykETAL2021PTRSA,
+    author = {Krafczyk, Matthew K. and Shi, August and Bhaskar, Adhithya and Marinov, Darko and Stodden, Victoria},
+    title = {Learning from Reproducing Computational Results: Introducing Three Principles and the Reproduction Package},
+    journal = PTRSA,
+    volume = {379},
+    number = {2197},
+    year = {2021},
+    pages = {1--28},
+}
+
 @article{LiAndZhang2017OOPSLA,
     author = {Li, Xia and Zhang, Lingming},
     title = {Transforming programs and tests in tandem for fault localization},
@@ -436,7 +448,7 @@
     volume = {3},
     number = {OOPSLA},
     year = {2019},
-    pages = {187:1-187:29},
+    pages = {187:1--187:29},
 }
 
 @inproceedings{SilvaETAL2014ICPC,
@@ -465,6 +477,16 @@
     number = {2},
     year = {2012},
     pages = {67--120},
+}
+
+@article{ZangETAL2024FSE,
+    author = {Zang, Zhiqiang and Yu, Fu-yao and Thimmaiah, Aditya and Shi, August and Gligoric, Milos},
+    title = {{J}ava {JIT} Testing with Template Extraction},
+    journal = PACMSE,
+    volume = {1},
+    number = {FSE},
+    year = {2024},
+    pages = {51:1--51:23},
 }
 
 @article{ZellerAndHildebrandtTSE2002,
@@ -519,6 +541,14 @@
     booktitle = ASE,
     year = {2016},
     pages = {16--26},
+}
+
+@inproceedings{BaralETAL2023ASE,
+    author = {Baral, Talank and Rahman, Shanto and Chanumolu, Bala Naren and Balcı, Başak and Tuncer, Tuna and Shi, August and Lam, Wing},
+    title = {Optimizing Continuous Development By Detecting and Preventing Unnecessary Content Generation},
+    booktitle = ASE,
+    year = {2023},
+    pages = {901--913},
 }
 
 @inproceedings{BarrETAL2015ISSTA,
@@ -663,6 +693,14 @@
     booktitle = ISSTA,
     year = {2020},
     pages = {211--224},
+}
+
+@inproceedings{DuttaETAL2021FSE,
+    author = {Dutta, Saikat and Shi, August and Misailovic, Sasa},
+    title = {{FLEX}: Fixing Flaky Tests in Machine-Learning Projects by Updating Assertion Bounds},
+    booktitle = ESEC/FSE,
+    year = {2021},
+    pages = {603--614},
 }
 
 @inproceedings{ElbaumETAL2014FSE,
@@ -1058,6 +1096,30 @@
     pages = {949--954},
 }
 
+@inproceedings{LiETAL2022ICSE,
+    author = {Li, Chengpeng and Zhu, Chenguang and Wang, Wenxi and Shi, August},
+    title = {Repairing Order-Dependent Flaky Tests via Test Generation},
+    booktitle = ICSE,
+    year = {2022},
+    pages = {1881--1892},
+}
+
+@inproceedings{LiETAL2022ISSTA,
+    author = {Li, Chengpeng and Shi, August},
+    title = {Evolution-Aware Detection of Order-Dependent Flaky Tests},
+    booktitle = ISSTA,
+    year = {2022},
+    pages = {114--125},
+}
+
+@inproceedings{LiETAL2023ISSTA,
+    author = {Li, Chengpeng and Khosravi, Mahdi and Lam, Wing and Shi, August},
+    title = {Systematically Producing Test-Orders to Detect Order-Dependent Flaky Tests},
+    booktitle = ISSTA,
+    year = {2023},
+    pages = {627--638},
+}
+
 @inproceedings{LongAndRinard2016POPL,
     author = {Long, Fan and Rinard, Martin},
     title = {Automatic patch generation by learning correct code},
@@ -1216,6 +1278,38 @@
     booktitle = ICSM,
     year      = {2012},
     pages     = {357--366},
+}
+
+@inproceedings{RahmanETAL2023ICSEDemo,
+    author = {Rahman, Shanto and Li, Chengpeng and Shi, August},
+    title = {{TSVD4J}: {T}hread-Safety Violation Detection for {J}ava},
+    booktitle = ICSE-Demo,
+    year = {2023},
+    pages = {78--82},
+}
+
+@inproceedings{RahmanAndShi2024ICSE,
+    author = {Rahman, Shanto and Shi, August},
+    title = {{FlakeSync}: Automatically Repairing Async Flaky Tests},
+    booktitle = ICSE,
+    year = {2024},
+    pages = {1673--1684},
+}
+
+@inproceedings{RahamETAL2024ICSTFlakeRake,
+    author = {Rahman, Shanto and Massey, Aaron and Lam, Wing and Shi, August and Bell, Jonathan},
+    title = {Automatically Reproducing Timing-Dependent Flaky-Test Failures},
+    booktitle = ICST,
+    year = {2024},
+    pages = {269--280},
+}
+
+@inproceedings{RahamETAL2024ICSTFlakyQ,
+    author = {Rahman, Shanto and Baz, Abdelrahman and Misailovic, Sasa and Shi, August},
+    title = {Quantizing Large-Language Models for Predicting Flaky Tests},
+    booktitle = ICST,
+    year = {2024},
+    pages = {93--104},
 }
 
 @inproceedings{RosenblumAndWeyuker1996FSE,
@@ -1490,6 +1584,22 @@
     pages = {199--209},
 }
 
+@inproceedings{ZangETAL2022ASE,
+    author = {Zang, Zhiqiang and Wiatrek, Nathan and Gligoric, Milos and Shi, August},
+    title = {Compiler Testing using Template Java Programs},
+    booktitle = ASE,
+    year = {2022},
+    pages = {1--13},
+}
+
+@inproceedings{ZangETAL2023ICSEDemo,
+    author = {Zang, Zhiqiang and Yu, Fu-yao and Wiatrek, Nathan and Gligoric, Milos and Shi, August},
+    title = {{JA}ttack: {J}ava {JIT} Testing using Template Programs},
+    booktitle = ICSE-Demo,
+    year = {2023},
+    pages = {6--10},
+}
+
 @inproceedings{ZhangETAL2010ICSE,
     author = {Zhang, Lu and Hou, Shan-Shan and Hu, Jun-Jue and Xie, Tao and Mei, Hong},
     title = {Is operator-based mutant selection superior to random mutant selection?},
@@ -1528,6 +1638,22 @@
     booktitle = ISSTA,
     year = {2014},
     pages = {385--396},
+}
+
+@inproceedings{ZhangETAL2021ICSE,
+    author = {Zhang, Peilun and Jiang, Yanjie and Wei, Anjiang and Stodden, Victoria and Marinov, Darko and Shi, August},
+    title = {Domain-Specific Fixes for Flaky Tests with Wrong Assumptions on Underdetermined Specifications},
+    booktitle = ICSE,
+    year = {2021},
+    pages = {50--61},
+}
+
+@inproceedings{ZhangETAL2022AST,
+    author = {Zhang, Jiyang and Liu, Yu and Gligoric, Milos and Legunsen, Owolabi and Shi, August},
+    title = {Comparing and Combining Analysis-Based and Learning-Based Regression Test Selection},
+    booktitle = AST,
+    year = {2022},
+    pages = {17--28},
 }
 
 @inproceedings{ZhuETAL2019ICSE,
