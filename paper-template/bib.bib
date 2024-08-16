@@ -2,6 +2,7 @@
 @string{APPT = "International Conference on Advanced Parallel Processing Technologies"}
 @string{ASE = "International Conference on Automated Software Engineering"}
 @string{ASE-Demo = "International Conference on Automated Software Engineering (Tool Demonstrations Track)"}
+@string{AST = "International Conference on Automation of Software Test"}
 @string{COMPSAC = "International Computer Software and Applications Conference"}
 @string{CSMR = "European Conference on Software Maintenance and Reengineering"}
 @string{Computer = "IEEE Computer"}
@@ -28,19 +29,22 @@
 @string{MSR = "Mining Software Repositories"}
 @string{MTD = "International Workshop on Managing Technical Debt"}
 @string{OOPSLA = "Conference on Object-Oriented Programming, Systems, Languages, and Applications"}
+@string{OSDI = "USENIX Symposium on Operating Systems Design and Implementation"}
 @string{PACMPL = "Proceedings of the ACM on Programming Languages"}
 @string{PACMSE = "Proceedings of the ACM on Software Engineering"}
+@string{PLDI = "Conference on Programming Language Design and Implementation"}
 @string{POPL = "Symposium on Principles of Programming Languages"}
 @string{PRECS = "International Workshop on Practical Reproducible Evaluation of Computer Systems"}
 @string{PTRSA = "Philosophical Transactions of the Royal Society A"}
 @string{PROMISE = "International Conference on Predictive Models and Data Analytics in Software Engineering"}
 @string{PROG = "Programming Journal"}
 @string{SBES = "Brazilian Symposium on Software Engineering"}
-@string{SCAM = "International Working Conference on Source Code Analysis and Manipulation"}
-@string{SQM = "International Conference on Software Quality Management"}
 @string{SBSE = "Search-Based Software Engineering"}
-@string{SWQD = "Software Quality Days Conference"}
+@string{SCAM = "International Working Conference on Source Code Analysis and Manipulation"}
+@string{SOSP = "Symposium on Operating Systems Principles"}
+@string{SQM = "International Conference on Software Quality Management"}
 @string{STVR = "Journal of Software Testing, Verification and Reliability"}
+@string{SWQD = "Software Quality Days Conference"}
 @string{TACAS = "Tools and Algorithms for the Construction and Analysis of Systems"}
 @string{TOSEM = "ACM Transactions on Software Engineering Methodology"}
 @string{TSE = "IEEE Transactions on Software Engineering"}
@@ -49,7 +53,6 @@
 @string{PROFES = "Product-Focused Software Process Improvement"}
 @string{OOPSLACompanion = "Companion Proceedings of the Conference on Object-Oriented Programming, Systems, Languages, and Applications"}
 @string{SPLASHCompanion = "Companion Proceedings of the International Conference on Systems, Programming, Languages and Applications: Software for Humanity"}
-@string{PLDI = "Conference on Programming Language Design and Implementation"}
 @string{ICST = "International Conference on Software Testing, Verification, and Validation"}
 @string{PPPJ = "International Conference on Principles and Practices of Programming on the Java Platform: Virtual Machines, Languages, and Tools"}
 @string{ENCRESS = "International Conference on Reliability, Quality and Safety of Software-Intensive Systems"}
@@ -244,6 +247,16 @@
     pages = {34--41},
 }
 
+@article{FatimaETAL2023TSE,
+    author = {Fatima, Sakina and Ghaleb, Taher A. and Briand, Lionel},
+    title = {Flakify: A Black-Box, Language Model-Based Predictor for Flaky Tests},
+    journal = TSE,
+    volume = {49},
+    number = {4},
+    year = {2023},
+    pages = {1912--1927},
+}
+
 @article{GaoETAL2016TSE,
     author = {Gao, Zebao and Chen, Zhenyu and Zou, Yunxiao and Memon, Atif M.},
     title = {{SITAR}: {GUI} test script repair},
@@ -322,6 +335,16 @@
     pages = {1--28},
 }
 
+@article{LamETAL2020OOPSLA,
+    author = {Lam, Wing and Winter, Stefan and Wei, Anjiang and Xie, Tao and Marinov, Darko and Bell, Jonathan},
+    title = {A large-scale longitudinal study of flaky tests},
+    journal = PACMPL,
+    volume = {4},
+    number = {OOPSLA},
+    year = {2020},
+    pages = {202:1--202:29},
+}
+
 @article{LiAndZhang2017OOPSLA,
     author = {Li, Xia and Zhang, Lingming},
     title = {Transforming programs and tests in tandem for fault localization},
@@ -379,6 +402,16 @@
     number = {6},
     year = {2014},
     pages = {1587--1633},
+}
+
+@article{McMinn2004STVR,
+  title = {Search-based software test data generation: A survey},
+  author = {McMinn, Phil},
+  journal = STVR,
+  volume = {14},
+  number = {2},
+  year  ={2004},
+  pages = {105--156},
 }
 
 @article{MonperrusCompSurv2018,
@@ -451,14 +484,6 @@
     pages = {187:1--187:29},
 }
 
-@inproceedings{SilvaETAL2014ICPC,
-    author = {Silva, Danilo and Terra, Ricardo and Valente, Marco Tulio},
-    title = {Recommending automated extract method refactorings},
-    booktitle = ICPC,
-    year = {2014},
-    pages = {146--156},
-}
-
 @article{TsantalisAndChatzigeorgiou2009TSE,
     author = {Tsantalis, Nikolaos and Chatzigeorgiou, Alexander},
     title = {Identification of move method refactoring opportunities},
@@ -519,6 +544,14 @@
     pages = {160--169},
 }
 
+@inproceedings{AkilETAL2023AST,
+    author = {Akli, Amal and Haben, Guillaume and Habchi, Sarra and Papadakis, Mike and Le Traon, Yves},
+    title = {{FlakyCat}: Predicting Flaky Tests Categories using Few-Shot Learning},
+    booktitle = AST,
+    year = {2023},
+    pages = {140--151},
+}
+
 @inproceedings{AlaliETAL2008ICPC,
     author = {Alali, Abdulkareem and Kagdi, Huzefa and Maletic, Jonathan I.},
     title = {What's a typical commit? {A} characterization of open source software repositories},
@@ -533,6 +566,22 @@
     booktitle = FSE,
     year = {2014},
     pages = {281--293},
+}
+
+@inproceedings{AlshammariETAL2021ICSE,
+    author = {Alshammari, Abdulrahman and Morris, Christopher and Hilton, Michael and Bell, Jonathan},
+    title = {{FlakeFlagger}: Predicting Flakiness Without Rerunning Tests},
+    booktitle = ICSE,
+    year = {2021},
+    pages = {1572--1584},
+}
+
+@inproceedings{AlshammariETAL2024ICST,
+    author = {Alshammari, Abdulrahman and Ammann, Paul and Hilton, Michael and Bell, Jonathan},
+    title = {262,447 Test Failures Later: An Empirical Evaluation of Flaky Failure Classifiers},
+    booktitle = ICST,
+    year = {2024},
+    pages = to-appear,
 }
 
 @inproceedings{AlipourETAL2016ASE,
@@ -591,6 +640,14 @@
     pages = {447--450},
 }
 
+@inproceedings{BellerETAL2017MSR,
+    title = {Oops, my tests broke the build: An explorative analysis of {T}ravis {CI} with {GitHub}},
+    author = {Beller, Moritz and Gousios, Georgios and Zaidman, Andy},
+    booktitle = MSR,
+    year = {2017},
+    pages = {356--367},
+}
+
 @inproceedings{BirdETAL2009MSR,
     author = {Bird, Christian and Rigby, Peter C. and Barr, Earl T. and Hamilton, David J. and German, Daniel M. and Devanbu, Prem},
     title = {The promises and perils of mining {Git}},
@@ -631,6 +688,14 @@
     pages = {322--333}
 }
 
+@inproceedings{CaiAndChan2012ICSE,
+    author = {Cai, Yan and Chan, WK},
+    title = {{MagicFuzzer}: Scalable deadlock detection for large-scale applications},
+    booktitle = ICSE,
+    year = {2012},
+    pages = {606--616},
+}
+
 @inproceedings{ChekamETAL2019FSE,
     author = {Chekam, Thierry Titcheu and Papadakis, Mike and Le Traon, Yves},
     title = {Mart: {A} Mutant Generation Tool for {LLVM}},
@@ -661,6 +726,14 @@
     booktitle = ESEC/FSE,
     year = {2018},
     pages = {656--667},
+}
+
+@inproceedings{CordyETAL2022ICSE,
+    author = {Cordy, Maxime and Rwemalika, Renaud and Franci, Adriano and Papadakis, Mike and Harman, Mark},
+    title = {{FlakiMe}: Laboratory-Controlled Test Flakiness Impact Assessment},
+    booktitle = ICSE,
+    year = {2022},
+    pages = {982--994},
 }
 
 @inproceedings{DanielETAL2009ASE,
@@ -703,6 +776,14 @@
     pages = {603--614},
 }
 
+@inproceedings{EckETAL2019FSE,
+    title = {Understanding flaky tests: The developer’s perspective},
+    author = {Eck, Moritz and Palomba, Fabio and Castelluccio, Marco and Bacchelli, Alberto},
+    booktitle = ESEC/FSE,
+    year = {2019},
+    pages = {830--840},
+}
+
 @inproceedings{ElbaumETAL2014FSE,
     author = {Elbaum, Sebastian and Rothermel, Gregg and Penix, John},
     title = {Techniques for Improving Regression Testing in Continuous Integration Development Environments},
@@ -711,12 +792,28 @@
     pages = {235--245},
 }
 
+@inproceedings{ElsnerETAL2021ISSTA,
+    author = {Elsner, Daniel and Hauer, Florian and Pretschner, Alexander and Reimer, Silke},
+    title = {Empirically evaluating readily available information for regression test optimization in continuous integration},
+    booktitle = ISSTA,
+    year = {2021},
+    pages = {491--504},
+}
+
 @inproceedings{EngstromETAL2009ESEM,
     author = {Engstr\"{o}m, Emelie and Skoglund, Mats and Runeson, Per},
     title = {Empirical evaluations of regression test selection techniques: {A} systematic review},
     booktitle = ESEM,
     year = {2008},
     pages = {22--31},
+}
+
+@inproceedings{EricksonETAL2010OSDI,
+    author = {Erickson, John and Musuvathi, Madanlal and Burckhardt, Sebastian and Olynyk, Kirk},
+    title = {Effective Data-Race Detection for the Kernel},
+    booktitle = OSDI,
+    year = {2010},
+    pages = {151--162},
 }
 
 @inproceedings{EsfahaniETAL2016ICSE,
@@ -823,6 +920,14 @@
     pages = {25--28},
 }
 
+@inproceedings{GruberETAL2021ICST,
+    author = {Gruber, Martin and Lukasczyk, Stephan and Krois, Florian and Fraser, Gordon},
+    title = {An Empirical Study of Flaky Tests in Python},
+    booktitle = ICST,
+    year = {2021},
+    pages = {148--158},
+}
+
 @inproceedings{GyoriETAL2015ISSTA,
     title = {Reliable testing: Detecting state-polluting tests to prevent test dependency},
     author = {Gyori, Alex and Shi, August and Hariri, Farah and Marinov, Darko},
@@ -845,6 +950,14 @@
     booktitle = ISSRE,
     year = {2018},
     pages = {112--122},
+}
+
+@inproceedings{HabchiETAL2022ICST,
+    author = {Habchi, Sarra and Haben, Guillaume and Papadakis, Mike and Cordy, Maxime and Le Traon, Yves},
+    title = {A Qualitative Study on the Sources, Impacts, and Mitigation Strategies of Flaky Tests},
+    booktitle = ICST,
+    year = {2022},
+    pages = {244--255},
 }
 
 @inproceedings{HaoETAL2012ICSE,
@@ -992,6 +1105,14 @@
     pages = {92--102},
 }
 
+@inproceedings{JonesETAL2002ICSE,
+    author = {Jones, James A. and Harrold, Mary Jean and Stasko, John},
+    title = {Visualization of test information to assist fault localization},
+    booktitle = ICSE,
+    year = {2002},
+    pages = {467--477},
+}
+
 @inproceedings{JustETAL2014FSE,
     author = {Just, Ren{\'e} and Jalali, Darioush and Inozemtseva, Laura and Ernst, Michael D. and Holmes, Reid and Fraser, Gordon},
     title = {Are mutants a valid substitute for real faults in software testing?},
@@ -1022,6 +1143,14 @@
     booktitle = ISSTA,
     year = {2014},
     pages = {433--436},
+}
+
+@inproceedings{KowalczykETAL2020ICSE-SEIP,
+    author = {Kowalczyk, Emily and Nair, Karan and Gao, Zebao and Silberstein, Leo and Long, Teng and Memon, Atif},
+    title = {Modeling and Ranking Flaky Tests at {A}pple},
+    booktitle = ICSE-SEIP,
+    year = {2020},
+    pages = {110--119},
 }
 
 @inproceedings{KrafczykETAL2019PRECS,
@@ -1072,6 +1201,14 @@
     pages = {298--311},
 }
 
+@inproceedings{LamETAL2020ISSRE,
+    author = {Lam, Wing and Winter, Stefan and Astorga, Angello and Stodden, Victoria and Marinov, Darko},
+    title = {Understanding Reproducibility and Characteristics of Flaky Tests Through Test Reruns in {J}ava Projects},
+    booktitle = ISSRE,
+    year = {2020},
+    pages = {403--413},
+}
+
 @inproceedings{LeGouesETAL2012ICSE,
     author = {Le Goues, Claire and Dewey-Vogt, Michael and Forrest, Stephanie and Weimer, Westley},
     title = {A systematic study of automated program repair: {F}ixing 55 out of 105 bugs for \$8 each},
@@ -1094,6 +1231,22 @@
     booktitle = ASE-Demo,
     year = {2017},
     pages = {949--954},
+}
+
+@inproceedings{LeesatapornwongsaETAL2022FSE,
+    author = {Leesatapornwongsa, Tanakorn and Ren, Xiang and Nath, Suman},
+    title = {{FlakeRepro}: Automated and Efficient Reproduction of Concurrency-Related Flaky Tests},
+    booktitle = ESEC/FSE,
+    year = {2022},
+    pages = {1509--1520},
+}
+
+@inproceedings{LiETAL2019SOSP,
+    author = {Li, Guangpu and Lu, Shan and Musuvathi, Madanlal and Nath, Suman and Padhye, Rohan},
+    title = {Efficient Scalable Thread-Safety-Violation Detection: Finding Thousands of Concurrency Bugs during Testing},
+    booktitle = SOSP,
+    year = {2019},
+    pages = {162--180},
 }
 
 @inproceedings{LiETAL2022ICSE,
@@ -1168,12 +1321,28 @@
     pages = {253--262},
 }
 
+@inproceedings{MaETAL2015ASE,
+    author = {Ma, Lei and Artho, Cyrille and Zhang, Cheng and Sato, Hiroyuki and Gmeiner, Johannes and Ramler, Rudolf},
+    title = {{GRT}: Program-analysis-guided random testing ({T})},
+    booktitle = ASE,
+    year = {2015},
+    pages = {212--223},
+}
+
 @inproceedings{MachalicaETAL2019ICSE-SEIP,
     author = {Machalica, Mateusz and Samylkin, Alex and Porth, Meredith and Chandra, Satish},
     title = {Predictive test selection},
     booktitle = ICSE-SEIP,
     year = {2019},
     pages = {91--100},
+}
+
+@inproceedings{MalmETAL2020AST,
+    author = {Malm, Jean and Causevic, Adnan and Lisper, Bj\"{o}rn and Eldh, Sigrid},
+    title = {Automated Analysis of Flakiness-mitigating Delays},
+    booktitle = AST,
+    year = {2020},
+    pages = {81--84},
 }
 
 @inproceedings{MechtaevETAL2016ICSE,
@@ -1190,6 +1359,14 @@
     booktitle = ICSE-SEIP,
     year = {2017},
     pages = {233--242},
+}
+
+@inproceedings{MisailovicETAL2006FSE,
+    author = {Misailovic, Sasa and Milicevic, Aleksandar and Petrovic, Nemanja and Khurshid, Sarfraz and Marinov, Darko},
+    title = {Parallel test generation and execution with {Korat}},
+    booktitle = FSE,
+    year = {2006},
+    pages =  {135--144},
 }
 
 @inproceedings{MirzaaghaeiETAL2012ICST,
@@ -1232,6 +1409,14 @@
     pages = {455--458},
 }
 
+@inproceedings{NieETAL2020ISSTA,
+    author = {Nie, Pengyu and Celik, Ahmet and Coley, Matthew and Milicevic, Aleksandar and Bell, Jonathan and Gligoric, Milos},
+    title = {Debugging the performance of {M}aven’s test isolation: Experience report},
+    booktitle = ISSTA,
+    year = {2020},
+    pages = {249--259},
+}
+
 @inproceedings{OffuttETAL1995ICTCS,
     author = {Offutt, A Jefferson and Pan, Jie and Voas, Jeffrey M},
     title = {Procedures for reducing the size of coverage-based test sets},
@@ -1246,6 +1431,14 @@
     booktitle = FSE,
     year = {2004},
     pages = {241--251},
+}
+
+@inproceedings{PachecoETAL2007ICSE,
+    author = {Pacheco, Carlos and Lahiri, Shuvendu K. and Ernst, Michael D. and Ball, Thomas},
+    title = {Feedback-directed random test generation},
+    booktitle = ICSE,
+    year = {2007},
+    pages = {75--84},
 }
 
 @inproceedings{PapadakisAndMalevrisISSRE2010,
@@ -1272,12 +1465,20 @@
     pages = {33:1--33:11},
 }
 
+@inproceedings{PradelETAL2012PLDI,
+    author = {Pradel, Michael and Gross, Thomas R.},
+    title = {Fully Automatic and Precise Detection of Thread Safety Violations},
+    booktitle = PLDI,
+    year = {2012},
+    pages = {521--530},
+}
+
 @inproceedings{RachatasumritAndKim2012ICSM,
-    author    = {Rachatasumrit, Napol and Kim, Miryung},
-    title     = {An empirical investigation into the impact of refactoring on regression testing},
+    author = {Rachatasumrit, Napol and Kim, Miryung},
+    title = {An empirical investigation into the impact of refactoring on regression testing},
     booktitle = ICSM,
-    year      = {2012},
-    pages     = {357--366},
+    year = {2012},
+    pages = {357--366},
 }
 
 @inproceedings{RahmanETAL2023ICSEDemo,
@@ -1432,6 +1633,22 @@
     pages = {112--122},
 }
 
+@inproceedings{SilvaETAL2014ICPC,
+    author = {Silva, Danilo and Terra, Ricardo and Valente, Marco Tulio},
+    title = {Recommending automated extract method refactorings},
+    booktitle = ICPC,
+    year = {2014},
+    pages = {146--156},
+}
+
+@inproceedings{SilvaETAL2020ICSME,
+    author = {Silva, Denini and Teixeira, Leopoldo and d’Amorim, Marcelo},
+    title = {Shake It! Detecting flaky tests caused by concurrency with {S}haker}, 
+    booktitle = ICSME,
+    year = {2020},
+    pages = {301-311},
+}
+
 @inproceedings{SoaresETAL2011SBES,
     author = {Soares, Gustavo and Catao, Bruno and Varjao, Catuxe and Aguiar, Solon and Gheyi, Rohit and Massoni, Tiago},
     title = {Analyzing refactorings on software repositories},
@@ -1504,17 +1721,33 @@
     pages = {848--853},
 }
 
+@inproceedings{WangETAL2022ICSEDemo,
+    author = {Wang, Ruixin and Chen, Yang and Lam, Wing},
+    title = {{iPFlakies}: A framework for Detecting and Fixing Python Order-Dependent Flaky Tests},
+    booktitle = ICSE-Demo,
+    year = {2022},
+    pages = {120--124},
+}
+
 @inproceedings{WeiETAL2010ISSTA,
     author = {Wei, Yi and Pei, Yu and Furia, Carlo A. and Silva, Lucas S. and Buchholz, Stefan and Meyer, Bertrand and Zeller, Andreas},
-    title = {Automated fixing of programs with contracts},
+    title = {Automated Fixing of Programs with Contracts},
     booktitle = ISSTA,
     year = {2010},
     pages = {61--72},
 }
 
+@inproceedings{WeiETAL2022ICSE,
+    author = {Wei, Anjiang and Yi, Pu and Li, Zhengxi and Xie, Tao and Marinov, Darko and Lam, Wing},
+    title = {Preempting Flaky Tests via Non-Idempotent-Outcome Tests},
+    booktitle = ICSE,
+    year = {2022},
+    pages = {1730--1742}
+}
+
 @inproceedings{WeimerETAL2009ICSE,
     author = {Weimer, Westley and Nguyen, ThanhVu and Le Goues, Claire and Forrest, Stephanie},
-    title = {Automatically finding patches using genetic programming},
+    title = {Automatically Finding Patches using Genetic Programming},
     booktitle = ICSE,
     year = {2009},
     pages = {364--374},
@@ -1648,6 +1881,14 @@
     pages = {50--61},
 }
 
+@inproceedings{ZhangETAL2022ASE,
+    author = {Zhang, Jiyang and Panthaplackel, Sheena and Nie, Pengyu and Li, Junyi Jessy and Gligoric, Milos},
+    title = {{CoditT5}: Pretraining for Source Code and Natural Language Editing},
+    booktitle = ASE,
+    year = {2022},
+    pages = {22:1--22:12},
+}
+
 @inproceedings{ZhangETAL2022AST,
     author = {Zhang, Jiyang and Liu, Yu and Gligoric, Milos and Legunsen, Owolabi and Shi, August},
     title = {Comparing and Combining Analysis-Based and Learning-Based Regression Test Selection},
@@ -1673,6 +1914,15 @@
 }
 
 % Tech reports
+
+@techreport{FengETAL2020,
+    author = {Feng, Zhangyin and Guo, Daya and Tang, Duyu and Duan, Nan and Feng, Xiaocheng and Gong, Ming and Shou, Linjun and Qin, Bing and Liu, Ting and Jiang, Daxin and Zhou, Ming},
+    title = {{CodeBERT}: A Pre-Trained Model for Programming and Natural Languages},
+    year = {2020},
+    eprint = {2002.08155},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CL}
+}
 
 @techreport{LamETAL2015TechReport,
     author = {Lam, Wing and Zhang, Sai and Ernst, Michael D.},
